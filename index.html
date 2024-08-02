@@ -1,124 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist Diario Patrullas</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>CHECKLIST DIARIO PATRULLAS</h1>
-        <div class="info">
-            <p>Dominio: <<[Dominio]>></p>
-            <p>Interno: <<[Interno N°]>></p>
-            <p>Km: <<[KM]>></p>
-            <p>Modelo: <<[Año]>></p>
-            <p>Vehículo: <<[Vehiculo]>></p>
-            <p>Fecha: <<[Fecha txt]>></p>
-            <p>Turno: <<[Turno]>></p>
-            <p><<[Patrulla]>></p>
-        </div>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        <section>
-            <h2>CONTROL DE FLUIDOS</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>ITEM</th>
-                        <th>ESTADO</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Aceite de motor</td><td><<[Aceite Motor]>></td></tr>
-                    <tr><td>2</td><td>Líquido refrigerante</td><td><<[Luquido refrigerante]>></td></tr>
-                    <tr><td>3</td><td>Liquido de freno</td><td><<[Liquido de freno]>></td></tr>
-                    <tr><td>5</td><td>Liquido limpiaparabrisa</td><td><<[Liquido limpiaparabrisa]>></td></tr>
-                </tbody>
-            </table>
-        </section>
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        <section>
-            <h2>CONTROL DE LUCES</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>ITEM</th>
-                        <th>ESTADO</th>
-                        <th>NOVEDAD</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Bajas</td><td><<[Bajas]>></td><td><<[NLB]>></td></tr>
-                    <tr><td>2</td><td>Altas</td><td><<[Altas]>></td><td><<[NLA]>></td></tr>
-                    <tr><td>3</td><td>Giro delantero</td><td><<[Guiño Delantero]>></td><td><<[NGD]>></td></tr>
-                    <tr><td>4</td><td>Giro trasero</td><td><<[Guiño Trasero]>></td><td><<[NGT]>></td></tr>
-                    <tr><td>5</td><td>Baliza frente</td><td><<[Baliza Frente]>></td><td><<[NBF]>></td></tr>
-                    <tr><td>6</td><td>Baliza trasera</td><td><<[Baliza Trasera]>></td><td><<[NBT]>></td></tr>
-                    <tr><td>7</td><td>Patente</td><td><<[Patente]>></td><td><<[NLP]>></td></tr>
-                    <tr><td>8</td><td>Freno</td><td><<[Freno]>></td><td><<[NLF_44]>></td></tr>
-                    <tr><td>9</td><td>Reversa</td><td><<[Reversa]>></td><td><<[NRVS]>></td></tr>
-                </tbody>
-            </table>
-        </section>
+h1 {
+    text-align: center;
+    color: #333;
+}
 
-        <section>
-            <h2>CONTROL INTERIOR</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>ITEM</th>
-                        <th>ESTADO</th>
-                        <th>NOVEDAD</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Limpieza interior</td><td><<[Limpieza interior]>></td></tr>
-                    <tr><td>2</td><td>Bocina</td><td><<[Bocina]>></td><td><<[NB]>></td></tr>
-                    <tr><td>3</td><td>Cinturones seg.</td><td><<[Cinturones seguridad]>></td><td><<[NCS]>></td></tr>
-                    <tr><td>4</td><td>Apoyacabeza</td><td><<[Apoyacabeza]>></td><td><<[NAC]>></td></tr>
-                    <tr><td>5</td><td>Limpiaparabrisa</td><td><<[Limpiaparabrisa]>></td><td><<[NL]>></td></tr>
-                    <tr><td>6</td><td>Desempañador</td><td><<[Desempañador]>></td><td><<[ND]>></td></tr>
-                    <tr><td>7</td><td>Retrovisor</td><td><<[Retrovisor]>></td><td><<[NR]>></td></tr>
-                    <tr><td>8</td><td>Alarma reversa</td><td><<[Alarma retroceso]>></td><td><<[NAR]>></td></tr>
-                </tbody>
-            </table>
-        </section>
+.info {
+    margin-bottom: 20px;
+}
 
-        <section>
-            <h2>CONTROL EXTERIOR</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>ITEM</th>
-                        <th>ESTADO</th>
-                        <th>NOVEDAD</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Espejos retrovisor</td><td><<[Retrovisor_65]>></td><td><<[NR2]>></td></tr>
-                    <tr><td>2</td><td>Paragolpe del.</td><td><<[Paragolpe delantero]>></td><td><<[NPD]>></td></tr>
-                    <tr><td>3</td><td>Paragolpe trasero</td><td><<[Paragolpe trasero]>></td><td><<[NPT]>></td></tr>
-                    <tr><td>4</td><td>Parrilla</td><td><<[Parilla]>></td><td><<[NP]>></td></tr>
-                    <tr><td>5</td><td>Capot</td><td><<[Capot]>></td><td><<[NC]>></td></tr>
-                    <tr><td>6</td><td>Guardabarro del.</td><td><<[Guardabarro delantero]>></td><td><<[NGD_76]>></td></tr>
-                    <tr><td>7</td><td>Guardabarro tras.</td><td><<[Guardabarro trasero]>></td><td><<[NGT_78]>></td></tr>
-                    <tr><td>8</td><td>Baberos</td><td><<[Babero]>></td><td><<[NB_80]>></td></tr>
-                    <tr><td>9</td><td>Guardaplast</td><td><<[Guardaplast]>></td><td><<[NG]>></td></tr>
-                    <tr><td>10</td><td>Barreros</td><td><<[Barrero]>></td><td><<[NB_84]>></td></tr>
-                </tbody>
-            </table>
-        </section>
+.info p {
+    margin: 5px 0;
+}
 
-        <section>
-            <h2>OTRAS NOVEDADES</h2>
-            <p><<[Observaciones]>></p>
-        </section>
-    </div>
-</body>
-</html>
+section {
+    margin-bottom: 20px;
+}
 
+h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
