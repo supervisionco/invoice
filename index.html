@@ -1,90 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Diario Patrullas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CHECKLIST DIARIO PATRULLAS</h1>
+        <div class="info">
+            <p>Dominio: <<[Dominio]>></p>
+            <p>Interno: <<[Interno N°]>></p>
+            <p>Km: <<[KM]>></p>
+            <p>Modelo: <<[Año]>></p>
+            <p>Vehículo: <<[Vehiculo]>></p>
+            <p>Fecha: <<[Fecha txt]>></p>
+            <p>Turno: <<[Turno]>></p>
+            <p><<[Patrulla]>></p>
+        </div>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>REMISIÓN</title>
-		<link rel="stylesheet" href="https://fredyortegon30.github.io/invoice/style.css">
-		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
-	</head>
-	<body>
-		<header>
-			<h1>REMISIÓN</h1>
-			<address>
-				<p>MI EMPRESA</p>
-				<p>NIT 1111111111<br>Calle 11- 10-33</p>
-				<p>Pereira</p>
-			</address>
+        <section>
+            <h2>CONTROL DE FLUIDOS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>ITEM</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Aceite de motor</td><td><<[Aceite Motor]>></td></tr>
+                    <tr><td>2</td><td>Líquido refrigerante</td><td><<[Luquido refrigerante]>></td></tr>
+                    <tr><td>3</td><td>Liquido de freno</td><td><<[Liquido de freno]>></td></tr>
+                    <tr><td>5</td><td>Liquido limpiaparabrisa</td><td><<[Liquido limpiaparabrisa]>></td></tr>
+                </tbody>
+            </table>
+        </section>
 
-<div style="float: right;">
-    <img alt="" src="https://acortar.link/caSNRS" style="width: 100px; height: 100px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
-</div>
+        <section>
+            <h2>CONTROL DE LUCES</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>ITEM</th>
+                        <th>ESTADO</th>
+                        <th>NOVEDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Bajas</td><td><<[Bajas]>></td><td><<[NLB]>></td></tr>
+                    <tr><td>2</td><td>Altas</td><td><<[Altas]>></td><td><<[NLA]>></td></tr>
+                    <tr><td>3</td><td>Giro delantero</td><td><<[Guiño Delantero]>></td><td><<[NGD]>></td></tr>
+                    <tr><td>4</td><td>Giro trasero</td><td><<[Guiño Trasero]>></td><td><<[NGT]>></td></tr>
+                    <tr><td>5</td><td>Baliza frente</td><td><<[Baliza Frente]>></td><td><<[NBF]>></td></tr>
+                    <tr><td>6</td><td>Baliza trasera</td><td><<[Baliza Trasera]>></td><td><<[NBT]>></td></tr>
+                    <tr><td>7</td><td>Patente</td><td><<[Patente]>></td><td><<[NLP]>></td></tr>
+                    <tr><td>8</td><td>Freno</td><td><<[Freno]>></td><td><<[NLF_44]>></td></tr>
+                    <tr><td>9</td><td>Reversa</td><td><<[Reversa]>></td><td><<[NRVS]>></td></tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section>
+            <h2>CONTROL INTERIOR</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>ITEM</th>
+                        <th>ESTADO</th>
+                        <th>NOVEDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Limpieza interior</td><td><<[Limpieza interior]>></td></tr>
+                    <tr><td>2</td><td>Bocina</td><td><<[Bocina]>></td><td><<[NB]>></td></tr>
+                    <tr><td>3</td><td>Cinturones seg.</td><td><<[Cinturones seguridad]>></td><td><<[NCS]>></td></tr>
+                    <tr><td>4</td><td>Apoyacabeza</td><td><<[Apoyacabeza]>></td><td><<[NAC]>></td></tr>
+                    <tr><td>5</td><td>Limpiaparabrisa</td><td><<[Limpiaparabrisa]>></td><td><<[NL]>></td></tr>
+                    <tr><td>6</td><td>Desempañador</td><td><<[Desempañador]>></td><td><<[ND]>></td></tr>
+                    <tr><td>7</td><td>Retrovisor</td><td><<[Retrovisor]>></td><td><<[NR]>></td></tr>
+                    <tr><td>8</td><td>Alarma reversa</td><td><<[Alarma retroceso]>></td><td><<[NAR]>></td></tr>
+                </tbody>
+            </table>
+        </section>
 
-		</header>
-		<article>
-			<h1>Recipient</h1>
-			<address>
-				<p>&lt;&lt;[id_cliente].[Nombre_cliente]&gt;&gt;<br>-</p>
-                <p class="small-text"><br>Email: &lt;&lt;[id_cliente].[Email]&gt;&gt;</p>
-                <p class="small-text">Cel:&lt;&lt;[id_cliente].[Celular]&gt;&gt;</p>
-			</address>
-			<table class="meta">
-				<tr>
-					<th><span>Remisión #</span></th>
-					<td><span>&lt;&lt;[N_factura]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Fecha</span></th>
-					<td><span>&lt;&lt;[Fecha]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-			</table>
-			<table class="inventory">
-				<thead>
-					<tr>
-						<th><span>Producto</span></th>
-						<th><span>Descripcion</span></th>
-						<th><span>Valor ud</span></th>
-						<th><span>Cantidad</span></th>
-						<th><span>Subtotal</span></th>
-					</tr>
-				</thead>
-				<tbody>
-				<p><span>&lt;&lt;Start: SELECT(DETALLE_VENTAS[id_detalle],[id_encabezado_venta]=[id_encabezado]) &gt;&gt;</span></p>
-					<tr>
-						<td><a class="cut">-</a>&lt;&lt;[id_producto].[Nombre de producto]&gt;&gt;</td>
-						<td><span></span></td>
-				        <td><span>&lt;&lt;[Valor_unitario]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Cantidad]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Subtotal]&gt;&gt;</span></td>
-					</tr>
-				<p><span>&lt;&lt; end &gt;&gt;</span></p>
-				</tbody>
-			</table>
-			<a class="add">+</a>
-			<table class="balance">
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Otros conceptos</span></th>
-					<td><span data-prefix="$"></span><span>0.00</span></td>
-				</tr>
-				<tr>
-					<th><span>Total a pagar</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-			</table>
-		</article>
-		<aside>
-			<h1><span>Notas adicionales</span></h1>
-			<div>
-				<p>Pagos a la cuenta de ahorros bancolombia # </p>
-			</div>
-		</aside>
-	</body>
+        <section>
+            <h2>CONTROL EXTERIOR</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>ITEM</th>
+                        <th>ESTADO</th>
+                        <th>NOVEDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Espejos retrovisor</td><td><<[Retrovisor_65]>></td><td><<[NR2]>></td></tr>
+                    <tr><td>2</td><td>Paragolpe del.</td><td><<[Paragolpe delantero]>></td><td><<[NPD]>></td></tr>
+                    <tr><td>3</td><td>Paragolpe trasero</td><td><<[Paragolpe trasero]>></td><td><<[NPT]>></td></tr>
+                    <tr><td>4</td><td>Parrilla</td><td><<[Parilla]>></td><td><<[NP]>></td></tr>
+                    <tr><td>5</td><td>Capot</td><td><<[Capot]>></td><td><<[NC]>></td></tr>
+                    <tr><td>6</td><td>Guardabarro del.</td><td><<[Guardabarro delantero]>></td><td><<[NGD_76]>></td></tr>
+                    <tr><td>7</td><td>Guardabarro tras.</td><td><<[Guardabarro trasero]>></td><td><<[NGT_78]>></td></tr>
+                    <tr><td>8</td><td>Baberos</td><td><<[Babero]>></td><td><<[NB_80]>></td></tr>
+                    <tr><td>9</td><td>Guardaplast</td><td><<[Guardaplast]>></td><td><<[NG]>></td></tr>
+                    <tr><td>10</td><td>Barreros</td><td><<[Barrero]>></td><td><<[NB_84]>></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>OTRAS NOVEDADES</h2>
+            <p><<[Observaciones]>></p>
+        </section>
+    </div>
+</body>
 </html>
+
